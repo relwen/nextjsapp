@@ -14,5 +14,5 @@ export default function Home() {
 
       <h1>Bienvenue à la maison</h1>
     </>
-  )
+  );
 }

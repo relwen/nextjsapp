@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 function Props({posts}){
-
-    
     return(
         <>
             <Head>Props</Head>
@@ -29,9 +27,9 @@ export async function getStaticProps(){
     const URL="https://jsonplaceholder.typicode.com/users";
 
     const res=await fetch(URL);
-    const posts=await res.json()
+    const posts=await res.json();
     return {
         props: {posts}
-    }
+    };
 
 }
