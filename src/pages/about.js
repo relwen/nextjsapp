@@ -1,10 +1,13 @@
-function About(){
+import MyLayout from "../../components/MyLayout";
+
+
+function About() {
 
     return (
         <>
-        <div>
-            <h1>A propos de nous</h1>
-        </div>
+                <div>
+                    <h1>A propos de nous</h1>
+                </div>
         </>
     );
 }

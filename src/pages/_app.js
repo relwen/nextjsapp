@@ -1,20 +1,16 @@
-import '@/styles/globals.css'
+import '@/styles/globals.css';
 import Link from 'next/link';
-
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
+import MyLayout from '../../components/MyLayout';
 export default function App({ Component, pageProps }) {
   return (
     <>
-
-      <main className='container'>
-        <nav>
-            <ul><Link href="/">Accueil</Link>
-              <Link href="/about">A propos de nous</Link>
-              <Link href="/contact">Contact</Link>
-            </ul>
-        </nav>
-          <Component {...pageProps} />
-        <h1>Footer</h1>
-      </main>
+    
+     <MyLayout>
+     <Component {...pageProps} />
+     </MyLayout>
+        
 
 
     </>

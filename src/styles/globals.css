@@ -19,3 +19,10 @@ ul a{
 body{
   background-color: yellowgreen;
 }
+
+footer{
+  text-align: center;
+  padding: 1rem;
+  background: black;
+  color: white;
+}
