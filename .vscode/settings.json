@@ -1,0 +1,9 @@
+{
+    "dart.extensionLogFile": null,
+    "emmet.preferences": {
+
+    },
+    "emmet.includeLanguages": {
+        "javascript":"javascriptreact"
+    }
+}
