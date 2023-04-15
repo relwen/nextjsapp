@@ -1,15 +1,23 @@
+import { UserContext } from "../Contexts/UserContext";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { useState } from "react";
 function MyLayout({ children }) {
+
+    const [user,setUser]=useState(null);
+
     return (
 
-        <div className="container">
+        <UserContext.Provider value={{user,setUser}}>
 
-            <Navbar />
-            {children}
+            <div className="container">
 
-            <Footer/>
-        </div>
+                <Navbar />
+                {children}
+
+                <Footer />
+            </div>
+        </UserContext.Provider>
 
     );
 
